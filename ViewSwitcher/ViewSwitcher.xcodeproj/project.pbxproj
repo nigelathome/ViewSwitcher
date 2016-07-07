@@ -10,6 +10,7 @@
 		91BCFCA51D2E068C0068569C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCFCA41D2E068C0068569C /* main.m */; };
 		91BCFCA81D2E068C0068569C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCFCA71D2E068C0068569C /* AppDelegate.m */; };
 		91BCFCB01D2E068C0068569C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BCFCAF1D2E068C0068569C /* Assets.xcassets */; };
+		91BCFCBC1D2E09DB0068569C /* BIDSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCFCBB1D2E09DB0068569C /* BIDSwitchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		91BCFCA71D2E068C0068569C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		91BCFCAF1D2E068C0068569C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91BCFCB41D2E068C0068569C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91BCFCBA1D2E09DB0068569C /* BIDSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDSwitchViewController.h; sourceTree = "<group>"; };
+		91BCFCBB1D2E09DB0068569C /* BIDSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDSwitchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 				91BCFCAF1D2E068C0068569C /* Assets.xcassets */,
 				91BCFCB41D2E068C0068569C /* Info.plist */,
 				91BCFCA31D2E068C0068569C /* Supporting Files */,
+				91BCFCBA1D2E09DB0068569C /* BIDSwitchViewController.h */,
+				91BCFCBB1D2E09DB0068569C /* BIDSwitchViewController.m */,
 			);
 			path = ViewSwitcher;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			files = (
 				91BCFCA81D2E068C0068569C /* AppDelegate.m in Sources */,
 				91BCFCA51D2E068C0068569C /* main.m in Sources */,
+				91BCFCBC1D2E09DB0068569C /* BIDSwitchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
