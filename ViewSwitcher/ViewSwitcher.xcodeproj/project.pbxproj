@@ -11,9 +11,9 @@
 		91BCFCA81D2E068C0068569C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCFCA71D2E068C0068569C /* AppDelegate.m */; };
 		91BCFCB01D2E068C0068569C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BCFCAF1D2E068C0068569C /* Assets.xcassets */; };
 		91BCFCBC1D2E09DB0068569C /* BIDSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCFCBB1D2E09DB0068569C /* BIDSwitchViewController.m */; };
-		91BCFCC01D2E2AE00068569C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BCFCBF1D2E2AE00068569C /* Main.storyboard */; };
 		91BCFCC31D2E34CB0068569C /* BIDYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCFCC21D2E34CB0068569C /* BIDYellowViewController.m */; };
 		91BCFCC61D2E34E80068569C /* BIDBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BCFCC51D2E34E80068569C /* BIDBlueViewController.m */; };
+		91BCFCC81D2E3CE30068569C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91BCFCC71D2E3CE30068569C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +25,11 @@
 		91BCFCB41D2E068C0068569C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91BCFCBA1D2E09DB0068569C /* BIDSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDSwitchViewController.h; sourceTree = "<group>"; };
 		91BCFCBB1D2E09DB0068569C /* BIDSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDSwitchViewController.m; sourceTree = "<group>"; };
-		91BCFCBF1D2E2AE00068569C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		91BCFCC11D2E34CB0068569C /* BIDYellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDYellowViewController.h; sourceTree = "<group>"; };
 		91BCFCC21D2E34CB0068569C /* BIDYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDYellowViewController.m; sourceTree = "<group>"; };
 		91BCFCC41D2E34E80068569C /* BIDBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDBlueViewController.h; sourceTree = "<group>"; };
 		91BCFCC51D2E34E80068569C /* BIDBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDBlueViewController.m; sourceTree = "<group>"; };
+		91BCFCC71D2E3CE30068569C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +66,12 @@
 				91BCFCA71D2E068C0068569C /* AppDelegate.m */,
 				91BCFCAF1D2E068C0068569C /* Assets.xcassets */,
 				91BCFCB41D2E068C0068569C /* Info.plist */,
+				91BCFCC71D2E3CE30068569C /* Main.storyboard */,
 				91BCFCA31D2E068C0068569C /* Supporting Files */,
 				91BCFCBA1D2E09DB0068569C /* BIDSwitchViewController.h */,
 				91BCFCBB1D2E09DB0068569C /* BIDSwitchViewController.m */,
 				91BCFCC41D2E34E80068569C /* BIDBlueViewController.h */,
 				91BCFCC51D2E34E80068569C /* BIDBlueViewController.m */,
-				91BCFCBF1D2E2AE00068569C /* Main.storyboard */,
 				91BCFCC11D2E34CB0068569C /* BIDYellowViewController.h */,
 				91BCFCC21D2E34CB0068569C /* BIDYellowViewController.m */,
 			);
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91BCFCB01D2E068C0068569C /* Assets.xcassets in Resources */,
-				91BCFCC01D2E2AE00068569C /* Main.storyboard in Resources */,
+				91BCFCC81D2E3CE30068569C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

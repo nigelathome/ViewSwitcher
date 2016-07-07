@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BIDSwitchViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    self.window.rootViewController = [storyBoard instantiateInitialViewController];
+//    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = [[UIViewController alloc] init];
+//    self.window.rootViewController = [storyBoard instantiateInitialViewController];
+//    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
