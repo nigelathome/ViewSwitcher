@@ -40,6 +40,7 @@
 */
 - (IBAction)switchViews:(id)sender
 {
-    
+    // just for test the action of item button in toolbar
+    self.view.backgroundColor = [UIColor blackColor];
 }
 @end
