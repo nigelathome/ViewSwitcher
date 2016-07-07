@@ -1,22 +1,18 @@
 //
-//  BIDSwitchViewController.m
+//  BIDYellowViewController.m
 //  ViewSwitcher
 //
 //  Created by Nigel Lee on 16/7/7.
 //  Copyright © 2016年 Apress. All rights reserved.
 //
 
-#import "BIDSwitchViewController.h"
 #import "BIDYellowViewController.h"
-#import "BIDBlueViewController.h"
 
-@interface BIDSwitchViewController ()
-@property (strong, nonatomic) BIDYellowViewController *yellowViewController;
-@property (strong, nonatomic) BIDBlueViewController *blueViewController;
+@interface BIDYellowViewController ()
 
 @end
 
-@implementation BIDSwitchViewController
+@implementation BIDYellowViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,8 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)switchViews:(id)sender
-{
-    
-}
+
 @end
