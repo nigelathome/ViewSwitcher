@@ -20,13 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
+    self.blueViewController = [self.storyboard
+                               instantiateViewControllerWithIdentifier:
+                               @"Blue"];
+    [self.view insertSubview:self.blueViewController.view atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    if (!self.blueViewController.view.superview) {
+        self.blueViewController = nil;
+    } else {
+        self.yellowViewController = nil;
+    }
 }
 
 /*
@@ -40,7 +48,18 @@
 */
 - (IBAction)switchViews:(id)sender
 {
-    // just for test the action of item button in toolbar
-    self.view.backgroundColor = [UIColor blackColor];
+    if (!self.yellowViewController.view.superview) {
+        if (!self.yellowViewController) {
+            self.yellowViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Yellow"];
+        }
+        [self.blueViewController.view removeFromSuperview];
+        [self.view insertSubview:self.yellowViewController.view atIndex:0];
+    } else {
+        if (!self.blueViewController) {
+            self.blueViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Blue"];
+        }
+        [self.yellowViewController.view removeFromSuperview];
+        [self.view insertSubview:self atIndex:0];
+    }
 }
 @end
