@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     self.blueViewController = [self.storyboard
                                instantiateViewControllerWithIdentifier:
@@ -29,7 +30,9 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
     // Dispose of any resources that can be recreated.
+    // this method will be inherited by every VC
     if (!self.blueViewController.view.superview) {
         self.blueViewController = nil;
     } else {
@@ -46,20 +49,45 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)switchViews:(id)sender
-{
+- (IBAction)switchViews:(id)sender {
     if (!self.yellowViewController.view.superview) {
         if (!self.yellowViewController) {
             self.yellowViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Yellow"];
         }
-        [self.blueViewController.view removeFromSuperview];
-        [self.view insertSubview:self.yellowViewController.view atIndex:0];
     } else {
         if (!self.blueViewController) {
             self.blueViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Blue"];
         }
-        [self.yellowViewController.view removeFromSuperview];
-        [self.view insertSubview:self atIndex:0];
+    }
+    
+    // switch VC
+    if (!self.yellowViewController.view.superview) {
+        self.yellowViewController.view.frame = self.view.frame;
+        [self switchViewFromViewController:self.blueViewController
+                          toViewCotroller:self.yellowViewController
+         ];
+    } else {
+        self.blueViewController.view.frame = self.view.frame;
+        [self switchViewFromViewController:self.yellowViewController
+                           toViewCotroller:self.blueViewController
+         ];
+    }
+    
+}
+
+- (void)switchViewFromViewController:(UIViewController *)fromVC
+                     toViewCotroller:(UIViewController *)toVC {
+    if (fromVC != nil) {
+        [fromVC willMoveToParentViewController:nil];
+        [fromVC.view removeFromSuperview];
+        [fromVC removeFromParentViewController];
+    }
+    
+    if (toVC != nil) {
+        [self addChildViewController:toVC];
+        [self.view insertSubview:toVC.view atIndex:0];
+        [toVC didMoveToParentViewController:self];
     }
 }
+
 @end
