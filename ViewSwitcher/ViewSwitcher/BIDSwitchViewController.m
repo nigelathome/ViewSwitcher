@@ -52,10 +52,12 @@
 - (IBAction)switchViews:(id)sender {
     if (!self.yellowViewController.view.superview) {
         if (!self.yellowViewController) {
+            // @"Yellow" is the storyboard ID in Scene BIDYellowViewController
             self.yellowViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Yellow"];
         }
     } else {
         if (!self.blueViewController) {
+            // as the same, @"Blue" is the storyboard ID in Scene BIDBlueViewController
             self.blueViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Blue"];
         }
     }
