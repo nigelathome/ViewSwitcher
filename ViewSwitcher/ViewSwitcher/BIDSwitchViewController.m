@@ -63,17 +63,30 @@
     }
     
     // switch VC
+    // using animation when transition
+    [UIView beginAnimations:@"View Flip" context:NULL];
+    [UIView setAnimationDelay:0.8f];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
     if (!self.yellowViewController.view.superview) {
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight
+                               forView:self.view
+                                 cache:YES
+         ];
         self.yellowViewController.view.frame = self.view.frame;
         [self switchViewFromViewController:self.blueViewController
                           toViewCotroller:self.yellowViewController
          ];
     } else {
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft
+                               forView:self.view
+                                 cache:YES
+         ];
         self.blueViewController.view.frame = self.view.frame;
         [self switchViewFromViewController:self.yellowViewController
                            toViewCotroller:self.blueViewController
          ];
     }
+    [UIView commitAnimations];
     
 }
 
