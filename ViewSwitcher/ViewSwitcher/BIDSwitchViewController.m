@@ -49,7 +49,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)switchViews:(id)sender {
+- (IBAction)switchMultipleViews:(id)sender {
     if (!self.yellowViewController.view.superview) {
         if (!self.yellowViewController) {
             // @"Yellow" is the storyboard ID in Scene BIDYellowViewController

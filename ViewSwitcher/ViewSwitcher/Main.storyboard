@@ -20,11 +20,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYJ-f2-u8m">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Switch Views" id="uUj-ri-Sw2">
-                                        <connections>
-                                            <action selector="switchViews:" destination="7XG-vf-hmd" id="XWC-d0-Ghv"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Switch Views" id="uUj-ri-Sw2"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -51,12 +47,54 @@
                     <view key="view" contentMode="scaleToFill" id="XJn-zo-Hhm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjp-Se-SCg">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.019513288512825966" green="0.17067435383796692" blue="0.9813113808631897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mjp-Se-SCg" firstAttribute="centerX" secondItem="XJn-zo-Hhm" secondAttribute="centerX" id="dD9-WJ-me2"/>
+                            <constraint firstItem="Mjp-Se-SCg" firstAttribute="centerY" secondItem="XJn-zo-Hhm" secondAttribute="centerY" id="f16-g1-8Zy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7R-1h-ib8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1360" y="-345"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="fUy-Z1-N3x">
+            <objects>
+                <viewController id="TaI-qx-yCH" customClass="BIDYellowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uDq-GU-NoQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="C8i-wO-yei"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qS6-7b-aQm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d48-we-Wka">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Press Me, Too">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96827307129999995" green="1" blue="0.28906687939999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d48-we-Wka" firstAttribute="centerY" secondItem="qS6-7b-aQm" secondAttribute="centerY" id="dZD-hU-bqh"/>
+                            <constraint firstItem="d48-we-Wka" firstAttribute="centerX" secondItem="qS6-7b-aQm" secondAttribute="centerX" id="wWD-i2-6Up"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VK-Xg-OUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="-345"/>
         </scene>
     </scenes>
 </document>
