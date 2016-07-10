@@ -20,7 +20,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYJ-f2-u8m">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Switch Views" id="uUj-ri-Sw2"/>
+                                    <barButtonItem title="Switch Views" id="uUj-ri-Sw2">
+                                        <connections>
+                                            <action selector="switchMultipleViews:" destination="7XG-vf-hmd" id="2z6-7Q-MB8"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -69,7 +73,7 @@
         <!--Yellow View Controller-->
         <scene sceneID="fUy-Z1-N3x">
             <objects>
-                <viewController id="TaI-qx-yCH" customClass="BIDYellowViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Yellow" id="TaI-qx-yCH" customClass="BIDYellowViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uDq-GU-NoQ"/>
                         <viewControllerLayoutGuide type="bottom" id="C8i-wO-yei"/>
