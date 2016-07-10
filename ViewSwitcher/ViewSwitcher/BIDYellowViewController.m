@@ -34,7 +34,7 @@
 }
 */
 
-- (IBAction)blueButtonPressed {
+- (IBAction)yellowButtonPressed {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Yellow View Button Press"
                                                                    message:@"You pressed the button on the yellow view"
                                                             preferredStyle:UIAlertControllerStyleAlert

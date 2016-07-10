@@ -52,11 +52,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjp-Se-SCg">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjp-Se-SCg">
+                                <rect key="frame" x="268" y="285" width="64" height="30"/>
                                 <state key="normal" title="Press Me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="blueButtonPressed" destination="M8d-dM-9Wq" eventType="touchUpInside" id="7cV-zo-BPb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.019513288512825966" green="0.17067435383796692" blue="0.9813113808631897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,11 +85,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d48-we-Wka">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d48-we-Wka">
+                                <rect key="frame" x="251.5" y="285" width="97" height="30"/>
                                 <state key="normal" title="Press Me, Too">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="yellowButtonPressed" destination="TaI-qx-yCH" eventType="touchUpInside" id="Nd6-e4-93D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96827307129999995" green="1" blue="0.28906687939999998" alpha="1" colorSpace="calibratedRGB"/>
